@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import FormBox from './form-box';
+import FormContainer from './form';
 import './App.css';
 
 class App extends Component {
@@ -9,7 +9,7 @@ class App extends Component {
         <div className="bg">
           <div className="bg-filter"></div>
           <div className="container">
-            <FormBox />
+            <FormContainer />
             <footer className="footer">Nossa política de privacidade garante que nós NUNCA iremos vender, alugar, dar ou divulgar seu e-mail para NINGUÉM.</footer>
           </div>
         </div>
