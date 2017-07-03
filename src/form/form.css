@@ -48,3 +48,50 @@
   background-color: #f0a939;
   cursor: pointer;
 }
+
+h1 {
+  font-size: 28px;
+  color: #444b56;
+  margin-bottom: 18px;
+  line-height: 34px;
+  padding: 0 30px;
+}
+
+p {
+  font-size: 16px;
+  color: #777777;
+  margin-bottom: 15px;
+  line-height: 19px;
+}
+
+.form-image {
+  width: 168px;
+}
+
+.form-content {
+  padding: 20px;
+  padding-bottom: 0;
+  margin: -20px;
+  margin-bottom: 0;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  -ms-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 490px;
+  margin: 0 auto;
+  background: #fff;
+  text-align: center;
+  padding: 35px 20px;
+  border-radius: 3px;
+  position: relative;
+  top: 18px;
+  background-attachment: scroll;
+}
+
+.fb-like {
+    padding: 15px;
+}
