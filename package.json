@@ -4,7 +4,9 @@
   "private": true,
   "dependencies": {
     "react": "^15.6.1",
-    "react-dom": "^15.6.1"
+    "react-dom": "^15.6.1",
+    "react-facebook": "^4.0.13",
+    "react-social-sharebuttons": "^2.1.2"
   },
   "devDependencies": {
     "autoprefixer": "7.1.0",

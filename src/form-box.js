@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import FormContent from './form-content'
+import FacebookProvider, { Like } from 'react-facebook';
+import { YouTubeButton } from 'react-social-sharebuttons';
 import './FormBox.css';
 
 class FormBox extends Component {
@@ -10,8 +12,10 @@ class FormBox extends Component {
         <h1>I Workshop Online: Eu Influencer</h1>
         <p>Sacadas, Insights, Marketing viral, Engajamento de audiência, Comportamento digital.</p>
         <FormContent />
-        <div className="fb-like" data-href="https://www.facebook.com/oney.araujo/" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
-        <div className="g-ytsubscribe" data-channel="niimakeup" data-layout="default" data-count="default"></div>
+        <FacebookProvider appId="119817438197601">
+          <Like href="https://www.facebook.com/oney.araujo/" colorScheme="dark" showFaces share />
+        </FacebookProvider>
+        <YouTubeButton channel="niimakeup"/>
       </div>
     );
   }
