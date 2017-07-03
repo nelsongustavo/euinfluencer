@@ -40,3 +40,7 @@ p {
   -ms-box-sizing: content-box;
   box-sizing: content-box;
 }
+
+.fb-like {
+    padding: 15px;
+}
