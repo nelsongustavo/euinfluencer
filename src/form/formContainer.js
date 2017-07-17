@@ -9,7 +9,8 @@ class FormContainer extends Component {
       <div className="form-container">
         <FormContent
           imageUrl="https://firebasestorage.googleapis.com/v0/b/***REMOVED***.appspot.com/o/oney-foto-lp-youtube.jpg?alt=media&token=a33eac1d-c29f-49af-bb1b-b2b6577d89f9"
-          title="I Workshop Online: Eu Influencer"
+          title="I Workshop EU INFLUENCER"
+          subTitle="Como se tornar um Influenciador Digital"
           text="Sacadas, Insights, Marketing viral, Engajamento de audiência, Comportamento digital."
         />
         <FacebookProvider appId="119817438197601">

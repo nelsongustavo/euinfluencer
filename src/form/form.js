@@ -7,6 +7,7 @@ class Form extends Component {
       <div className="form-content">
         <img className="form-image" src={this.props.imageUrl}></img>
         <h1>{this.props.title}</h1>
+        <h2>{this.props.subTitle}</h2>
         <p>{this.props.text}</p>
         <form action="https://canaldesucesso.us13.list-manage.com/subscribe/post" method="post" className="validate" noValidate>
           <input type="hidden" name="u" value="cc49294c8f423b98bac86a0e0" />
