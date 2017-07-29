@@ -1,0 +1,55 @@
+.book-description {
+  margin-top: 39px;
+}
+
+.book-description section {
+  padding: 20px 0;
+}
+
+.author-description h3 {
+  margin-top: 0;
+}
+
+.book-description h1 {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.author-description p, .book-description p {
+  font-family: 'Open Sans',sans-serif;
+  font-size: 18px;
+  color: #525252;
+  margin-bottom: 25px;
+  line-height: 1.42;
+  margin-bottom: 10px;
+}
+
+.ebook-footer a, .header a {
+  font-family: 'Open Sans',sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    display: block;
+    line-height: 50px;
+    text-decoration: none;
+}
+
+.ebook-footer .yt-button {
+  padding: 39px;
+}
+
+.ebook-footer .fb-like {
+  padding: 15px;
+}
+
+section {
+  padding: 40px 0;
+}
+
+.about {
+  background-color: rgb(239, 239, 239);
+}
+
+.about img {
+  margin-top: 24px;
+}

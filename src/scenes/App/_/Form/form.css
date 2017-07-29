@@ -54,7 +54,6 @@ h1 {
   font-size: 28px;
   color: #444b56;
   line-height: 34px;
-  padding: 0 30px;
 }
 
 h2 {
@@ -66,7 +65,7 @@ h2 {
   padding: 0 30px;
 }
 
-p {
+.form-content p {
   font-size: 16px;
   color: #777777;
   margin-bottom: 15px;
@@ -101,6 +100,6 @@ p {
   background-attachment: scroll;
 }
 
-.fb-like {
+.form-container .fb-like {
     padding: 15px;
 }
