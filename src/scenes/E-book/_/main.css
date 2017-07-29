@@ -53,3 +53,7 @@ section {
 .about img {
   margin-top: 24px;
 }
+
+.navbar {
+  margin-bottom: 0;
+}
