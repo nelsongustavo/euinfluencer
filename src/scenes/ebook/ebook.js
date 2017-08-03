@@ -2,11 +2,8 @@ import React from 'react';
 import { Grid, Row, Col, Image } from 'react-bootstrap';
 import Header from './_/header';
 import Footer from './_/footer';
-import BookDescription from './_/bookDescription'
-import AuthorDescription from './_/authorDescription'
-import ga from 'react-ga';
-
-ga.pageview(window.location.pathname);
+import BookDescription from './_/book_description'
+import AuthorDescription from './_/author_description'
 
 export default () => {
   return (
