@@ -1,3 +1,3 @@
 //index.js
-import Root from './E-book'
+import Root from './ebook'
 export default Root
