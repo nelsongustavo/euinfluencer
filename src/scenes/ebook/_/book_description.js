@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Button, Modal, FormGroup, ControlLabel, FormControl } from 'react-bootstrap';
 import ga from 'react-ga';
-import './main.css';
 
 export default class BookDescription extends Component {
 
