@@ -5,6 +5,8 @@ import ga from 'react-ga';
 
 import Ebook from './scenes/ebook';
 import App from './scenes/app';
+import thanks from './scenes/thanks';
+
 import registerServiceWorker from './registerServiceWorker';
 
 ga.initialize('UA-102606035-1');
@@ -14,6 +16,7 @@ ReactDOM.render(
   <BrowserRouter>
     <div>
       <Switch>
+        <Route exact path="/obrigado" component={thanks} />
         <Route exact path="/app" component={App} />
         <Route exact path="/" component={Ebook} />
       </Switch>
