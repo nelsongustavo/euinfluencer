@@ -59,21 +59,30 @@ export default class BookDescription extends Component {
            <Modal.Title>Siga os passos abaixo corretamente para você se inscrever e fazer o download.</Modal.Title>
          </Modal.Header>
          <Modal.Body>
-           <form id="ktv2-form-44514" className="form" accept-charset="UTF-8" method="post" action="https://www.klickmail.com.br/api/subscriber/signin.html" >
-            <input type="hidden" id="FormField_ApiKey" name="apikey" value="11btzsjkz8zec7d" />
-            <FormGroup controlId="formInlineEmail">
-              <span className="text-step">1° PASSO</span>
-              <ControlLabel>Preencha os campos abaixo</ControlLabel>
-              <FormControl type="email" placeholder="Entre com o seu melhor E-mail" id="FormField_EmailAddress" name="email" bsSize="large"/>
-            </FormGroup>
-            <FormGroup id="step-2">
-              <span className="text-step2">2° PASSO</span>
-              <label>Clique e confirme sua inscrição</label>
-              <Button type="submit" bsStyle="danger" bsSize="large">
-                BAIXE GRÁTIS!
-              </Button>
-            </FormGroup>
-          </form>
+            <script src="https://assets.convertkit.com/assets/CKJS4.js?v=21"></script>
+         <div className="ck_form">
+
+             <div className="ck_form_fields">
+               <div id="ck_success_msg" style={{display:'none'}}>
+                 <p>Sucesso! Agora é só verificar o seu e-mail para confirmar o cadastro.</p>
+               </div>
+               <form id="ktv2-form-44514" className="form" method="post" action="https://app.convertkit.com/landing_pages/248046/subscribe">
+                <input type="hidden" name="ck_form_recaptcha" value="" id="ck_form_recaptcha"/>
+                <FormGroup>
+                  <span className="text-step">1° PASSO</span>
+                  <ControlLabel>Preencha os campos abaixo</ControlLabel>
+                  <FormControl type="email" placeholder="Entre com o seu melhor E-mail" id="FormField_EmailAddress" name="email" bsSize="large"/>
+                </FormGroup>
+                <FormGroup id="step-2">
+                  <span className="text-step2">2° PASSO</span>
+                  <label>Clique e confirme sua inscrição</label>
+                  <Button type="submit" bsStyle="danger" bsSize="large">
+                    BAIXE GRÁTIS!
+                  </Button>
+                </FormGroup>
+              </form>
+            </div>
+          </div>
          </Modal.Body>
          <Modal.Footer>
            <p>Suas informações estão seguras.</p>
