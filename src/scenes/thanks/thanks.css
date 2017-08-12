@@ -1,0 +1,13 @@
+.thanks .layout-footer {
+  bottom: 0;
+  width: 100%;
+  position: absolute;
+}
+
+.thanks h1 {
+  font-size: 36px;
+}
+
+.thanks p {
+  font-size: 20px;
+}
