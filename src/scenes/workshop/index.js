@@ -1,3 +1,3 @@
 //index.js
-import Root from './App'
+import Root from './workshop'
 export default Root

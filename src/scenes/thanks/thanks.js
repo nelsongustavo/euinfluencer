@@ -9,10 +9,11 @@ export default () => {
       <Layout>
         <section>
           <Grid>
-            <h1>Obrigado por se inscrever!</h1>
+            <h1>Pronto, tudo certo!</h1>
           <section>
-            <p>Em breve você vai receber um e-mail de confirmação, confirme sua inscrição e receba o e-book.</p>
-            <p>Não se esqueça de olhar a caixa de spam o e-mail pode ter ido parar lá por engano.</p>
+            <p>Agora nos vemos nos dias: 11 a 14 de Setembro.</p>
+            <p>Marque na sua agenda ou no seu despertador digital.</p>
+            <p>Nos vemos em breve.</p>
           </section>
           </Grid>
         </section>

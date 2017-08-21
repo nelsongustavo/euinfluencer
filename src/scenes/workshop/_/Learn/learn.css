@@ -1,0 +1,56 @@
+.learn h2 {
+  font-size: 30px;
+  color: #444b56;
+  text-align: center;
+  font-weight: bold;
+}
+
+.learn h3 {
+  font-size: 24px;
+}
+
+.learn section {
+  padding: 20px 0;
+}
+
+.learn p {
+  font-size: 18px;
+  font-weight: 300;
+  color: #555555;
+}
+
+.learn .item {
+  text-align: center;
+  border-color: #d9534f;
+  border-radius: 3px;
+  webkit-box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.05);
+  -webkit-border-radius: 3px;
+  background-color: #fafafa;
+  border-left: 4px solid #d9534f;
+  padding: 32px 20px 32px 57px;
+  text-align: left;
+}
+
+.learn .ico {
+  webkit-border-radius: 80px;
+    -moz-border-radius: 80px;
+    border-radius: 80px;
+    background-color: #fff;
+    width: 80px;
+    height: 80px;
+    display: block;
+    position: absolute;
+    top: 51px;
+    left: -21px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.learn .ico img {
+  display: block;
+  height: 88px;
+  width: 88px;
+  margin: -4px 0 0 -4px;
+}
