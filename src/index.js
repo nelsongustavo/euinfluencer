@@ -17,10 +17,11 @@ ReactDOM.render(
   <BrowserRouter>
     <div>
       <Switch>
+        <Route path="/1-semana-influenciador-digital" component={Workshop} />
         <Route path="/check-email" component={CheckEmail} />
         <Route path="/obrigado" component={thanks} />
-        <Route path="/1-semana-influenciador-digital" component={Workshop} />
-        <Route path="/" component={Ebook} />
+        <Route path="/ebook" component={Ebook} />
+        <Route path="/" component={Workshop} />
       </Switch>
     </div>
   </BrowserRouter>,
