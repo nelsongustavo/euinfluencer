@@ -1,9 +1,11 @@
 import React from 'react';
-import Layout from '../../shared';
+import Layout from '../../shared/layout';
 import { Grid } from 'react-bootstrap';
+import ReactPixel from 'react-facebook-pixel';
 import './thanks.css';
 
 export default () => {
+  ReactPixel.track("CompleteRegistration", {})
   return (
     <div className="thanks">
       <Layout>

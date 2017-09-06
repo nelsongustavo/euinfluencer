@@ -1,0 +1,19 @@
+h1 {
+  color: white;
+  padding: .7em 0 .2em;
+}
+
+h2 {
+  color: white;
+  margin-bottom: 30px;
+}
+
+header {
+  font-family: 'Open Sans', sans-serif;
+  background: #000;
+  text-align: center;
+}
+
+.menu {
+  margin-top: 40px;
+}
