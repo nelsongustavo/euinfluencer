@@ -1,5 +1,5 @@
 import React from 'react';
-import Layout from '../../shared';
+import Layout from '../../shared/layout';
 import { Grid } from 'react-bootstrap';
 import './check-email.css';
 

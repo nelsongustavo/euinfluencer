@@ -1,6 +1,6 @@
 import React from 'react';
 import { Grid, Row, Col, Image } from 'react-bootstrap';
-import Layout from '../../shared';
+import Layout from '../../shared/layout';
 import BookDescription from './_/book_description'
 import AuthorDescription from './_/author_description'
 import './ebook.css';
