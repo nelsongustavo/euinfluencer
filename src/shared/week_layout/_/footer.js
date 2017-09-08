@@ -5,7 +5,6 @@ export default () => {
   return (
     <div className="layout-footer">
       <Grid>
-        <p>footer</p>
       </Grid>
     </div>
   );
