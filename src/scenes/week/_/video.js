@@ -9,7 +9,7 @@ const Video = ({ videoId }) => {
 
   return (
     <div className="embed-responsive embed-responsive-16by9">
-      <iframe className="embed-responsive-item" frameborder="0" allowfullscreen="1" title="YouTube video player" src={url} />
+      <iframe className="embed-responsive-item" frameBorder="0" allowFullScreen="1" title="YouTube video player" src={url} />
     </div>
   );
 };

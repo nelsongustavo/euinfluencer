@@ -42,3 +42,31 @@ section.video {
   width: 593px;
   font-size: 28px;
 }
+
+@media screen and (max-width: 768px) {
+  .navbar-header {
+    background-color: black;
+    border-top: 1px solid black;
+  }
+
+  .navbar-toggle span {
+    background: white;
+  }
+
+  .nav-pills {
+    margin-top: 0;
+  }
+
+  .side-collapse {
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: height .4s;
+    -o-transition: height .4s;
+    transition: height .4s;
+    margin: 0 -15px;
+
+  }
+  .side-collapse.in {
+      height:0;
+  }
+}
