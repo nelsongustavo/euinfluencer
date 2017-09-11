@@ -1,17 +1,24 @@
 h1 {
   color: white;
-  padding: .7em 0 .2em;
+  padding-top: 41px;
+  font-weight: bold;
 }
 
 h2 {
   color: white;
-  margin-bottom: 30px;
+  margin-top: -13px;
+  margin-bottom: 70px;
+  font-size: 25px;
 }
 
 header {
   font-family: 'Open Sans', sans-serif;
-  background: #000;
   text-align: center;
+  background-image: url(https://firebasestorage.googleapis.com/v0/b/***REMOVED***.appspot.com/o/bg-workshop.jpg?alt=media&token=859bc49f-7d49-4b07-a52f-c20dd5bdb5cd);
+  background-attachment: scroll;
+  background-position: center;
+  background-size: cover;
+  padding: 0;
 }
 
 .menu {

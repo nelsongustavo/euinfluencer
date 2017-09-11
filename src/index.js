@@ -27,7 +27,7 @@ ReactDOM.render(
         <Route path="/check-email" component={CheckEmail} />
         <Route path="/obrigado" component={Thanks} />
         <Route path="/ebook" component={Ebook} />
-        <Route path="/" component={Workshop} />
+        <Route path="/" component={Week} />
       </Switch>
     </div>
   </BrowserRouter>,

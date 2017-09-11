@@ -1,13 +1,17 @@
 import React from 'react';
+import Header from '../../layout/_/header';
 import { Grid } from 'react-bootstrap';
 
 export default () => {
   return (
-    <header>
-      <Grid>
-        <h1>1º Semana Do Influenciador Digital</h1>
-        <h2>O caminho mais rápido para você se tornar um inflenciador</h2>
-      </Grid>
-    </header>
+    <div>
+      <Header />
+      <header>
+        <Grid>
+          <h1>I SEMANA DO INFLUENCIADOR DIGITAL</h1>
+          <h2>Transformando pessoas comuns em Influenciadores Digitais</h2>
+        </Grid>
+      </header>
+    </div>
   );
 }
