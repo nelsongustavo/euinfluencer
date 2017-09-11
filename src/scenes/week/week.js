@@ -10,7 +10,7 @@ class WorkShop extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      videoId: "2g5F7DmIE2s"
+      videoId: "nOQipNj-Nv8"
     };
     // This binding is necessary to make `this` work in the callback
     this.handleSelect = this.handleSelect.bind(this);
@@ -26,7 +26,7 @@ class WorkShop extends Component {
         <Layout>
           <Grid>
             <Nav bsStyle="pills" justified activeKey={this.state.videoId} onSelect={this.handleSelect}>
-              <NavItem className="first" eventKey={"2g5F7DmIE2s"} title="aula 1">Aula 01 (11/09)</NavItem>
+              <NavItem className="first" eventKey={"nOQipNj-Nv8"} title="aula 1">Aula 01 (11/09)</NavItem>
               <NavItem eventKey={2} title="aula 2" disabled><Glyphicon glyph="lock" /> Aula 02 (12/09)</NavItem>
               <NavItem eventKey={3} title="aula 3" disabled><Glyphicon glyph="lock" /> Aula 03 (13/09)</NavItem>
               <NavItem eventKey={4} title="aula 4" disabled><Glyphicon glyph="lock" /> Aula 04 (14/09)</NavItem>
