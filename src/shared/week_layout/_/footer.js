@@ -1,11 +1,8 @@
 import React from 'react';
-import { Grid } from 'react-bootstrap';
+import Footer from '../../layout/_/footer';
 
 export default () => {
   return (
-    <div className="layout-footer">
-      <Grid>
-      </Grid>
-    </div>
+    <Footer />
   );
 }
