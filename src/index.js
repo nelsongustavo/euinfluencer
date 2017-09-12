@@ -10,7 +10,8 @@ import Workshop from './scenes/workshop';
 import Thanks from './scenes/thanks';
 import CheckEmail from './scenes/check-email';
 
-import registerServiceWorker from './registerServiceWorker';
+import { unregister } from './registerServiceWorker';
+unregister();
 
 ReactPixel.init('498312307210725');
 ReactPixel.pageView();
@@ -32,4 +33,3 @@ ReactDOM.render(
     </div>
   </BrowserRouter>,
   document.getElementById('root'));
-registerServiceWorker();
