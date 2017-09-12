@@ -1,3 +1,16 @@
+h1 {
+  color: white;
+  padding-top: 41px;
+  font-weight: bold;
+}
+
+h2 {
+  color: white;
+  margin-top: -13px;
+  margin-bottom: 70px;
+  font-size: 25px;
+}
+
 section.video {
   padding: 0;
   margin-top: 9px;
@@ -44,6 +57,16 @@ section.video {
 }
 
 @media screen and (max-width: 768px) {
+
+  .weel h2 {
+    font-size: 15px;
+    margin-top: -10px;
+  }
+
+  .week h1 {
+    font-size: 17px;
+  }
+
   .navbar-header {
     background-color: black;
     border-top: 1px solid black;
@@ -69,4 +92,18 @@ section.video {
   .side-collapse.in {
       height:0;
   }
+}
+
+.week header {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  background-image: url(https://firebasestorage.googleapis.com/v0/b/euinfluencer.appspot.com/o/bg-workshop.jpg?alt=media&token=859bc49f-7d49-4b07-a52f-c20dd5bdb5cd);
+  background-attachment: scroll;
+  background-position: center;
+  background-size: cover;
+  padding: 0;
+}
+
+.week .menu {
+  margin-top: 40px;
 }
