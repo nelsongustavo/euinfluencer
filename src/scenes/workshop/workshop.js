@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import FormContainer from './_/Form';
-import Learn from './_/Learn'
+import FormContainer from './_/form';
+import Learn from './_/learn'
 import Layout from '../../shared/layout';
 import { Grid, Row, Col, Image } from 'react-bootstrap';
 import AuthorDescription from '../ebook/_/author_description'
