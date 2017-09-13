@@ -4,7 +4,8 @@ import { connect } from "react-redux";
 import { fetchVideos } from "../../flux/actions";
 import Video from './_/video';
 import Layout from '../../shared/layout';
-import { Grid, Nav, NavItem, Glyphicon } from 'react-bootstrap';
+import Form from '../../shared/form';
+import { Grid, Nav, NavItem, Glyphicon, Button } from 'react-bootstrap';
 import FacebookProvider, { Comments } from 'react-facebook';
 import './week.css';
 
@@ -13,9 +14,17 @@ class Week extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      videoId: ""
+      videoId: "",
+      showForm: false
     };
     this.handleSelect = this.handleSelect.bind(this);
+    this.handleFormButton = this.handleFormButton.bind(this);
+  }
+
+  handleFormButton() {
+    this.setState({
+     showForm: true
+   });
   }
 
   handleSelect(selectedKey) {
@@ -27,17 +36,9 @@ class Week extends Component {
   }
 
   renderVideos() {
-    const { videos } = this.props;
+    const { data } = this.props.videos;
 
-    if (videos) {
-      const current = _.find(videos, "current");
-
-      if (current && !this.state.videoId) {
-        this.setState({videoId: current.yt_id});
-      }
-    }
-
-    return _.map(videos, video => {
+    return _.map(data, video => {
       return (
         <NavItem
           key={video.id}
@@ -54,6 +55,15 @@ class Week extends Component {
   }
 
   render() {
+    let yt_id = "";
+    const { current } = this.props.videos;
+
+    if (current) {
+        yt_id = current.yt_id;
+    }
+
+    const videoId = this.state.videoId ? this.state.videoId :  yt_id;
+
     return (
       <div className="week">
         <Layout>
@@ -68,7 +78,7 @@ class Week extends Component {
               <button data-toggle="collapse-side" data-target=".side-collapse" data-target-2=".side-collapse-container" type="button" className="navbar-toggle pull-left"><span className="icon-bar"></span><span className="icon-bar"></span><span className="icon-bar"></span></button>
             </div>
             <div className="navbar-inverse side-collapse in">
-              <Nav bsStyle="pills" justified activeKey={this.state.videoId} onSelect={this.handleSelect}>
+              <Nav bsStyle="pills" justified activeKey={videoId} onSelect={this.handleSelect}>
                 { this.renderVideos() }
               </Nav>
             </div>
@@ -76,9 +86,13 @@ class Week extends Component {
           <section className="video">
             <Grid>
               {/* Aqui vai o Id dos videos  */}
-              <Video videoId={this.state.videoId} />
+              <Video videoId={this.state.videoId ? this.state.videoId :  videoId} />
             </Grid>
           </section>
+          <Grid>
+            <Button bsStyle="warning" onClick={this.handleFormButton}>SE INSCREVA NA LISTA VIP</Button>
+            { this.state.showForm ? <Form /> : null }
+          </Grid>
           {/* <section>
             <Grid>
               <Button bsStyle="warning">QUERO ME TORNAR UM INFLUENCIADOR</Button>
