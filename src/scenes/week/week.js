@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 import { fetchVideos } from "../../flux/actions";
 import Video from './_/video';
 import Layout from '../../shared/layout';
-import { Grid, Nav, NavItem } from 'react-bootstrap';
+import { Grid, Nav, NavItem, Glyphicon } from 'react-bootstrap';
 import FacebookProvider, { Comments } from 'react-facebook';
 import './week.css';
 
@@ -27,7 +27,17 @@ class Week extends Component {
   }
 
   renderVideos() {
-    return _.map(this.props.videos, video => {
+    const { videos } = this.props;
+
+    if (videos) {
+      const current = _.find(videos, "current");
+
+      if (current && !this.state.videoId) {
+        this.setState({videoId: current.yt_id});
+      }
+    }
+
+    return _.map(videos, video => {
       return (
         <NavItem
           key={video.id}
@@ -35,6 +45,8 @@ class Week extends Component {
           eventKey={video.yt_id}
           title={video.title}
           disabled={!video.is_active}>
+          {video.is_active ? "" : <Glyphicon glyph="lock" />}
+          {" "}
           {video.title + " " + video.data}
         </NavItem>
       );
@@ -42,18 +54,6 @@ class Week extends Component {
   }
 
   render() {
-    const { videos } = this.props;
-    let active = "";
-
-    if (!videos) {
-      return <div>Loading...</div>;
-    }
-
-    if (videos) {
-      active = "nOQipNj-Nv8";
-      this.setState({videoId: active});
-    }
-
     return (
       <div className="week">
         <Layout>
@@ -68,7 +68,7 @@ class Week extends Component {
               <button data-toggle="collapse-side" data-target=".side-collapse" data-target-2=".side-collapse-container" type="button" className="navbar-toggle pull-left"><span className="icon-bar"></span><span className="icon-bar"></span><span className="icon-bar"></span></button>
             </div>
             <div className="navbar-inverse side-collapse in">
-              <Nav bsStyle="pills" justified activeKey={active} onSelect={this.handleSelect}>
+              <Nav bsStyle="pills" justified activeKey={this.state.videoId} onSelect={this.handleSelect}>
                 { this.renderVideos() }
               </Nav>
             </div>
