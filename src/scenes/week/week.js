@@ -11,7 +11,7 @@ class WorkShop extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      videoId: "NZdBCP8XfRg"
+      videoId: "q-DNQMRypok"
     };
     // This binding is necessary to make `this` work in the callback
     this.handleSelect = this.handleSelect.bind(this);
@@ -46,8 +46,8 @@ class WorkShop extends Component {
             <div className="navbar-inverse side-collapse in">
               <Nav bsStyle="pills" justified activeKey={this.state.videoId} onSelect={this.handleSelect}>
                 <NavItem className="first" eventKey={"nOQipNj-Nv8"} title="aula 1">Aula 01 (11/09)</NavItem>
-                <NavItem eventKey={"NZdBCP8XfRg"} title="aula 2" disabled>Aula 02 (12/09)</NavItem>
-                <NavItem eventKey={3} title="aula 3" disabled><Glyphicon glyph="lock" /> Aula 03 (13/09)</NavItem>
+                <NavItem eventKey={"NZdBCP8XfRg"} title="aula 2">Aula 02 (12/09)</NavItem>
+                <NavItem eventKey={"q-DNQMRypok"} title="aula 3">Aula 03 (13/09)</NavItem>
                 <NavItem eventKey={4} title="aula 4" disabled><Glyphicon glyph="lock" /> Aula 04 (14/09)</NavItem>
               </Nav>
             </div>
