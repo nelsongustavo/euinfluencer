@@ -1,19 +1,20 @@
 import React, { Component } from 'react';
+import _ from "lodash";
+import { connect } from "react-redux";
+import { fetchVideos } from "../../flux/actions";
 import Video from './_/video';
 import Layout from '../../shared/layout';
-import $ from "jquery";
-import { Grid, Nav, NavItem, Glyphicon } from 'react-bootstrap';
+import { Grid, Nav, NavItem } from 'react-bootstrap';
 import FacebookProvider, { Comments } from 'react-facebook';
 import './week.css';
 
-class WorkShop extends Component {
+class Week extends Component {
 
   constructor(props) {
     super(props);
     this.state = {
-      videoId: "NZdBCP8XfRg"
+      videoId: ""
     };
-    // This binding is necessary to make `this` work in the callback
     this.handleSelect = this.handleSelect.bind(this);
   }
 
@@ -22,14 +23,37 @@ class WorkShop extends Component {
   }
 
   componentDidMount() {
-    const sideslider = $('[data-toggle=collapse-side]');
-    const sel = sideslider.attr('data-target');
-    sideslider.click(function(){
-      $(sel).toggleClass('in');
+     this.props.fetchVideos()
+  }
+
+  renderVideos() {
+    return _.map(this.props.videos, video => {
+      return (
+        <NavItem
+          key={video.id}
+          className={video.id == 1 ? "first" : ""}
+          eventKey={video.yt_id}
+          title={video.title}
+          disabled={!video.is_active}>
+          {video.title + " " + video.data}
+        </NavItem>
+      );
     });
   }
 
   render() {
+    const { videos } = this.props;
+    let active = "";
+
+    if (!videos) {
+      return <div>Loading...</div>;
+    }
+
+    if (videos) {
+      active = "nOQipNj-Nv8";
+      this.setState({videoId: active});
+    }
+
     return (
       <div className="week">
         <Layout>
@@ -44,11 +68,8 @@ class WorkShop extends Component {
               <button data-toggle="collapse-side" data-target=".side-collapse" data-target-2=".side-collapse-container" type="button" className="navbar-toggle pull-left"><span className="icon-bar"></span><span className="icon-bar"></span><span className="icon-bar"></span></button>
             </div>
             <div className="navbar-inverse side-collapse in">
-              <Nav bsStyle="pills" justified activeKey={this.state.videoId} onSelect={this.handleSelect}>
-                <NavItem className="first" eventKey={"nOQipNj-Nv8"} title="aula 1">Aula 01 (11/09)</NavItem>
-                <NavItem eventKey={"NZdBCP8XfRg"} title="aula 2" disabled>Aula 02 (12/09)</NavItem>
-                <NavItem eventKey={3} title="aula 3" disabled><Glyphicon glyph="lock" /> Aula 03 (13/09)</NavItem>
-                <NavItem eventKey={4} title="aula 4" disabled><Glyphicon glyph="lock" /> Aula 04 (14/09)</NavItem>
+              <Nav bsStyle="pills" justified activeKey={active} onSelect={this.handleSelect}>
+                { this.renderVideos() }
               </Nav>
             </div>
           </Grid>
@@ -76,4 +97,14 @@ class WorkShop extends Component {
   }
 }
 
-export default WorkShop;
+function mapStateToProps(state) {
+  return { videos: state.videos };
+}
+
+function mapDispatchToProps(dispatch) {
+  return {
+    fetchVideos: () => dispatch(fetchVideos())
+  };
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Week);
