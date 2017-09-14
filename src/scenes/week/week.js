@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Video from './_/video';
 import Layout from '../../shared/layout';
 import $ from "jquery";
-import { Grid, Nav, NavItem, Glyphicon } from 'react-bootstrap';
+import { Grid, Nav, NavItem, Button } from 'react-bootstrap';
 import FacebookProvider, { Comments } from 'react-facebook';
 import './week.css';
 
@@ -11,7 +11,7 @@ class WorkShop extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      videoId: "q-DNQMRypok"
+      videoId: "tbN1TNXF1Vk"
     };
     // This binding is necessary to make `this` work in the callback
     this.handleSelect = this.handleSelect.bind(this);
@@ -48,7 +48,7 @@ class WorkShop extends Component {
                 <NavItem className="first" eventKey={"nOQipNj-Nv8"} title="aula 1">Aula 01 (11/09)</NavItem>
                 <NavItem eventKey={"NZdBCP8XfRg"} title="aula 2">Aula 02 (12/09)</NavItem>
                 <NavItem eventKey={"q-DNQMRypok"} title="aula 3">Aula 03 (13/09)</NavItem>
-                <NavItem eventKey={4} title="aula 4" disabled><Glyphicon glyph="lock" /> Aula 04 (14/09)</NavItem>
+                <NavItem eventKey={"tbN1TNXF1Vk"} title="aula 4">Aula 04 (14/09)</NavItem>
               </Nav>
             </div>
           </Grid>
@@ -58,11 +58,11 @@ class WorkShop extends Component {
               <Video videoId={this.state.videoId} />
             </Grid>
           </section>
-          {/* <section>
+          <section>
             <Grid>
-              <Button bsStyle="warning">QUERO ME TORNAR UM INFLUENCIADOR</Button>
+              <Button href="https://go.hotmart.com/R6459107M" bsStyle="warning" target="_blank">QUERO ME TORNAR UM INFLUENCIADOR</Button>
             </Grid>
-          </section> */}
+          </section>
           <section>
             <Grid>
               <FacebookProvider appId="119817438197601">
