@@ -66,7 +66,7 @@ export default class BookDescription extends Component {
                  <p>Sucesso! Agora é só verificar o seu e-mail para confirmar o cadastro.</p>
                </div>
                <form id="ktv2-form-44514" className="form" method="post" action="https://app.convertkit.com/landing_pages/248046/subscribe.html" data-remote="true">
-                <input type="hidden" name="redirect" value="http://***REMOVED***.com/obrigado"/>
+                <input type="hidden" name="redirect" value="http://euinfluencer.com/obrigado"/>
                 <input type="hidden" name="id" value="248046" id="landing_page_id"/>
                 <input type="hidden" name="ck_form_recaptcha" value="" id="ck_form_recaptcha"/>
                 <FormGroup>

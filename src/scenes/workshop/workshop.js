@@ -22,7 +22,7 @@ class WorkShop extends Component {
               <h2>UM POUCO MAIS SOBRE O ORGANIZADOR DO EVENTO…</h2>
               <section>
                 <Row>
-                  <Col md={3} mdOffset={2}><Image className="center-block" src="https://firebasestorage.googleapis.com/v0/b/***REMOVED***.appspot.com/o/oney_redondo_vermelho.png?alt=media&token=b9eebb97-2916-498b-a896-04f5b16659af" rounded /></Col>
+                  <Col md={3} mdOffset={2}><Image className="center-block" src="https://firebasestorage.googleapis.com/v0/b/euinfluencer.appspot.com/o/oney_redondo_vermelho.png?alt=media&token=b9eebb97-2916-498b-a896-04f5b16659af" rounded /></Col>
                   <Col md={7} ><AuthorDescription /></Col>
                 </Row>
               </section>
