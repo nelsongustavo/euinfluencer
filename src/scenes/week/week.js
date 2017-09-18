@@ -101,7 +101,7 @@ class Week extends Component {
           <section>
             <Grid>
               <FacebookProvider appId="119817438197601">
-                <Comments href="http://***REMOVED***.com" width="100%"/>
+                <Comments href="http://euinfluencer.com" width="100%"/>
               </FacebookProvider>
             </Grid>
           </section>
