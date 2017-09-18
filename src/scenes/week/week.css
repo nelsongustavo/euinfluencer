@@ -54,6 +54,7 @@ section.video {
   height: 65px;
   width: 593px;
   font-size: 28px;
+  padding-top: 12px;
 }
 
 @media screen and (max-width: 768px) {
