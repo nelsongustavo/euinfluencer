@@ -19,12 +19,19 @@ class Week extends Component {
     };
     this.handleSelect = this.handleSelect.bind(this);
     this.handleFormButton = this.handleFormButton.bind(this);
+    this.closeForm = this.closeForm.bind(this);
   }
 
   handleFormButton() {
     this.setState({
      showForm: true
    });
+  }
+
+  closeForm(){
+    this.setState({
+      showForm: false
+    })
   }
 
   handleSelect(selectedKey) {
@@ -63,7 +70,6 @@ class Week extends Component {
     }
 
     const videoId = this.state.videoId ? this.state.videoId :  yt_id;
-
     return (
       <div className="week">
         <Layout>
@@ -89,15 +95,16 @@ class Week extends Component {
               <Video videoId={this.state.videoId ? this.state.videoId :  videoId} />
             </Grid>
           </section>
-          <Grid>
-            <Button bsStyle="warning" onClick={this.handleFormButton}>SE INSCREVA NA LISTA VIP</Button>
-            { this.state.showForm ? <Form /> : null }
-          </Grid>
-          {/* <section>
+          <section>
             <Grid>
-              <Button bsStyle="warning">QUERO ME TORNAR UM INFLUENCIADOR</Button>
+              <Button bsStyle="warning" onClick={this.handleFormButton}>ENTRAR NA LISTA VIP</Button>
+              { this.state.showForm ? <Form
+                title="Siga os passos abaixo corretamente para você se inscrever."
+                action="https://app.convertkit.com/landing_pages/266223/subscribe"
+                pageId="266223"
+                closeForm={this.closeForm} /> : null }
             </Grid>
-          </section> */}
+          </section>
           <section>
             <Grid>
               <FacebookProvider appId="119817438197601">

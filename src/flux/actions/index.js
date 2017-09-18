@@ -14,11 +14,14 @@ export function fetchVideos() {
   }
 }
 
-export function addUser(user) {
-  const usersRef = fire.database().ref('/users');
+export function addUser(user, callback) {
+  const userId = fire.database().ref('users').push().key;
+  const usersRef = fire.database().ref('users/' + userId);
+  user.id = userId;
   return dispatch => {
-    usersRef.set({
-      user
+    usersRef.set(user)
+    .then(() => {
+      callback(userId);
     })
     .then(() => {
       dispatch({
