@@ -1,0 +1,59 @@
+.form .modal-header {
+  background-color: #d9534f;
+}
+
+.form .modal-header h4 {
+  text-align: center;
+  font-size: 26px;
+  color: white;
+}
+
+.form .modal-footer p {
+  text-align: center;
+}
+
+.form .modal-body {
+  padding: 45px 55px;
+}
+
+.form .form-group button {
+  width: 100%;
+}
+
+.form #step-2 {
+  padding-top: 20px;
+}
+
+.form .form-group label {
+  width: 60%;
+  float: right;
+  text-align: right;
+  font-size: 21px;
+  font-weight: 300;
+  color: #587581;
+  margin: 5px;
+  margin-bottom: 5px;
+}
+
+.form .text-step {
+  font-size: 30px;
+  font-weight: bold;
+  color: #acc4cd;
+  text-transform: uppercase;
+}
+
+.form .text-step2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #234668;
+  text-transform: uppercase;
+}
+
+.form .book-description p {
+  font-family: 'Open Sans',sans-serif;
+  font-size: 18px;
+  color: #525252;
+  margin-bottom: 25px;
+  line-height: 1.42;
+  margin-bottom: 10px;
+}

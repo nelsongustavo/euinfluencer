@@ -1,5 +1,6 @@
 import React from 'react';
 import ga from 'react-ga';
+import leadTracker from './lead-tracker';
 import ReactPixel from 'react-facebook-pixel';
 
 ReactPixel.init('498312307210725');
@@ -11,11 +12,14 @@ const tracker = (WrappedComponent) => {
     ga.set({ page });
     ga.pageview(page);
     ReactPixel.pageView();
+    leadTracker(page);
   };
 
   const HOC = (props) => {
-    const page = props.location.pathname;
-    trackPage(page);
+    if (process.env.NODE_ENV === 'production') {
+      const page = props.location.pathname;
+      trackPage(page);
+    }
 
     return (
       <WrappedComponent {...props} />
