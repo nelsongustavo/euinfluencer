@@ -10,13 +10,13 @@ export default function leadTracker(page) {
 }
 
 function addUserToStorage(page) {
-  const user = { "id": "", "name": "", "email": "", "tracks": [{"url": page, "date": new Date().toUTCString()}]};
+  const user = { "id": "", "name": "", "email": "", "tracks": [{"url": page, "date": new Date().getTime()}]};
   localStorage.user = JSON.stringify(user);
 }
 
 function updateUserTracks(page) {
   const user = JSON.parse(localStorage.user);
-  const track = {"url": page, "date": new Date().toUTCString()};
+  const track = {"url": page, "date": new Date().getTime()};
 
   user.tracks.push(track);
   localStorage.user = JSON.stringify(user);

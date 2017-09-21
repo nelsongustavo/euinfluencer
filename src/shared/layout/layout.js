@@ -5,8 +5,8 @@ import './layout.css';
 
 export default (props) => {
   return (
-    <div>
-      <Header />
+    <div className="layout">
+      <Header redirect={props.redirect} />
         {props.children}
       <Footer />
     </div>

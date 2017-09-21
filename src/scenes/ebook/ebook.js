@@ -1,8 +1,8 @@
 import React from 'react';
 import { Grid, Row, Col, Image } from 'react-bootstrap';
 import Layout from '../../shared/layout';
+import About from '../../shared/about';
 import BookDescription from './_/book_description'
-import AuthorDescription from './_/author_description'
 import './ebook.css';
 
 export default () => {
@@ -17,14 +17,7 @@ export default () => {
             </Row>
           </Grid>
         </section>
-        <section className="about">
-          <Grid>
-            <Row>
-              <Col md={3} mdOffset={2}><Image className="center-block" src="https://firebasestorage.googleapis.com/v0/b/euinfluencer.appspot.com/o/oney_redondo.png?alt=media&token=98e4f209-c3ab-4a7c-96c4-35029a6751ab" rounded /></Col>
-              <Col md={7} ><AuthorDescription /></Col>
-            </Row>
-          </Grid>
-        </section>
+        <About />
       </Layout>
     </div>
   );

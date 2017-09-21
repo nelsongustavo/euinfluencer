@@ -6,7 +6,7 @@
   padding: 15px;
 }
 
-.header a {
+.layout .header a {
   font-family: 'Open Sans',sans-serif;
   font-size: 18px;
   color: #ffffff;
@@ -17,17 +17,18 @@
   font-weight: bold;
 }
 
-.header a span {
+.layout .header a span {
   font-size: 12px;
   color: #d9534f;
 }
 
-.navbar {
+.layout .navbar {
   margin-bottom: 0;
   border-radius: 0;
+  text-align: left;
 }
 
-.navbar-inverse {
+.layout .navbar-inverse {
   background-color: #383737;
   border-color: #080808;
 }

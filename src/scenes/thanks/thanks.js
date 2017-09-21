@@ -13,8 +13,7 @@ export default () => {
           <Grid>
             <h1>Pronto, tudo certo!</h1>
           <section>
-            <p>Agora nos vemos nos dias: 11 a 14 de Setembro.</p>
-            <p>Marque na sua agenda ou no seu despertador digital.</p>
+            <p>Agora é só aguardar para receber as melhores sacadas no seu e-mail</p>
             <p>Nos vemos em breve.</p>
           </section>
           </Grid>

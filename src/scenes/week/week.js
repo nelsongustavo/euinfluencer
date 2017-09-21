@@ -73,12 +73,6 @@ class Week extends Component {
     return (
       <div className="week">
         <Layout>
-          <header>
-            <Grid>
-              <h1>I SEMANA DO INFLUENCIADOR DIGITAL</h1>
-              <h2>Transformando pessoas comuns em Influenciadores Digitais</h2>
-            </Grid>
-          </header>
           <Grid>
             <div className="navbar-header">
               <button data-toggle="collapse-side" data-target=".side-collapse" data-target-2=".side-collapse-container" type="button" className="navbar-toggle pull-left"><span className="icon-bar"></span><span className="icon-bar"></span><span className="icon-bar"></span></button>

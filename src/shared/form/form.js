@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from "react-redux";
 import { addUser } from "../../flux/actions";
 import axios from "axios";
+import './form.css';
 import { Button, Modal, FormGroup, ControlLabel, FormControl } from 'react-bootstrap';
 
 class Form extends Component {
@@ -49,7 +50,9 @@ class Form extends Component {
           localStorage.user = JSON.stringify(user);
         });
       }
-    })
+    }).then(() => {
+      this.props.redirect();
+    });
   }
 
   onInputChange(event) {

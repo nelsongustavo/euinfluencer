@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import FormContainer from './_/form';
 import Learn from './_/learn'
 import Layout from '../../shared/layout';
-import { Grid, Row, Col, Image } from 'react-bootstrap';
-import AuthorDescription from '../ebook/_/author_description'
+import { Grid, Row } from 'react-bootstrap';
+import About from '../../shared/layout';
 import './workshop.css';
 
 class WorkShop extends Component {
@@ -20,12 +20,7 @@ class WorkShop extends Component {
             <Learn />
             <div className="workshop-author-description">
               <h2>UM POUCO MAIS SOBRE O ORGANIZADOR DO EVENTO…</h2>
-              <section>
-                <Row>
-                  <Col md={3} mdOffset={2}><Image className="center-block" src="https://firebasestorage.googleapis.com/v0/b/euinfluencer.appspot.com/o/oney_redondo_vermelho.png?alt=media&token=b9eebb97-2916-498b-a896-04f5b16659af" rounded /></Col>
-                  <Col md={7} ><AuthorDescription /></Col>
-                </Row>
-              </section>
+              <About />
             </div>
           </Grid>
         </Layout>
