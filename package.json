@@ -15,7 +15,7 @@
     "react-ga": "^2.2.0",
     "react-redux": "4.3.0",
     "react-router-dom": "^4.1.2",
-    "react-scripts": "1.0.13",
+    "react-scripts": "1.0.14",
     "react-social-sharebuttons": "^2.1.2",
     "redux": "^3.0.4",
     "redux-thunk": "^2.2"
