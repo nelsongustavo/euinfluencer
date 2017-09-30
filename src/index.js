@@ -6,13 +6,13 @@ import thunk from 'redux-thunk';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import reducers from "./flux/reducers";
-import Ebook from './scenes/ebook';
-import Home from './scenes/home';
-import Workshop from './scenes/workshop';
-import Thanks from './scenes/thanks';
-import CheckEmail from './scenes/check-email';
+import Ebook from './Scenes/Ebook';
+import Home from './Scenes/Home';
+import Workshop from './Scenes/WorkShop';
+import Thanks from './Scenes/Thanks';
+import CheckEmail from './Scenes/CheckEmail';
 
-import track from './shared/track';
+import Track from './Shared/Track';
 import { unregister } from './registerServiceWorker';
 unregister();
 
@@ -22,11 +22,11 @@ ReactDOM.render(
   <BrowserRouter>
     <Provider store={createStoreWithMiddleware(reducers)}>
       <Switch>
-        <Route path="/1-semana-influenciador-digital" component={track(Workshop)} />
-        <Route path="/check-email" component={track(CheckEmail)} />
-        <Route path="/obrigado" component={track(Thanks)} />
-        <Route path="/ebook" component={track(Ebook)} />
-        <Route path="/" component={track(Home)} />
+        <Route path="/1-semana-influenciador-digital" component={Track(Workshop)} />
+        <Route path="/check-email" component={Track(CheckEmail)} />
+        <Route path="/obrigado" component={Track(Thanks)} />
+        <Route path="/ebook" component={Track(Ebook)} />
+        <Route path="/" component={Track(Home)} />
       </Switch>
     </Provider>
   </BrowserRouter>,
