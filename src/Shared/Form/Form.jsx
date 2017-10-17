@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { connect } from "react-redux";
-import { Button, Modal, FormGroup, ControlLabel, FormControl } from 'react-bootstrap';
-import axios from "axios";
 import { addUser } from "../../flux/actions";
-import './Form.css';
-
+import Modal from "./modal";
+import axios from "axios";
+import './form.css';
+import { Button, FormGroup, ControlLabel, FormControl } from 'react-bootstrap';
 
 class Form extends Component {
 
